@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "nombre": "portatil",
+      "precio": 52222,
+      "categoria": "panel",
+      "id": "eaa7"
+    }
+  ]
+}

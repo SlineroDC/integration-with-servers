@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- General Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Sebastian Linero De Castro" />
+    <meta name="designer" content="Sebastian Linero De Castro" />
+    <meta name="copyright" content="© 2025 SlineroDC. All rights reserved" />
+    <meta name="organization" content="SlineroDC" />
+    <meta name="sitedomain" content="https://github.com/SlineroDC/integration-with-servers.git" />
+    <meta name="description"
+        content="A project demonstrating API integration with JavaScript, interactive data management, validation, and dynamic user interface." />
+    <meta name="keywords" content="JavaScript, API integration, Data Management, Validation, Web Development" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="revisit-after" content="15days" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="API Integration and Data Management" />
+    <meta property="og:description"
+        content="A project demonstrating API integration with JavaScript, interactive data management, validation, and dynamic user interface." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/SlineroDC/integration-with-servers.git" />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/SlineroDC/integration-with-servers/refs/heads/main/src/img/logo.png" />
+    <meta property="og:site_name" content="SlineroDC Projects" />
+
+    <!-- Fonts or External Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>API Integration and Data Management</title>
+</head>
+
+<body>
+    <header>
+        <h1>Integration with APIs</h1>
+    </header>
+
+    <main>
+        <!-- Add Product Form Section -->
+        <section id="addProductSection" class="form-box">
+            <form id="productForm" class="form">
+                <h2 class="title">Add Product</h2>
+                <div class="form-container">
+                    <input type="text" id="productName" class="input" placeholder="Product name" required />
+                </div>
+                <div class="form-container">
+                    <input type="number" id="productPrice" class="input" placeholder="Price" min="0" step="0.01"
+                        required />
+                </div>
+                <div class="form-container">
+                    <input type="text" id="productCategory" class="input" placeholder="Category" required />
+                </div>
+                <button id="addProductButton" type="submit">Add Product</button>
+            </form>
+        </section>
+
+        <!-- Product List Section -->
+        <section>
+            <h3>Product List:</h3>
+            <ul id="productList"></ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>If you want to get in touch, please reach out via the following channels:</p>
+            <ul>
+                <li>Email: <a href="mailto:sebastianlinero15@gmail.com">sebastianlinero15@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/SlineroDC" target="_blank" rel="noopener noreferrer">github.com/SlineroDC</a></li>
+                <li>Discord: <a href="https://discord.com/users/696218966301081621" target="_blank" rel="noopener noreferrer">Sebastian#1234</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <article id="redes">
+            <h3>Social Networks</h3>
+            <a href="https://github.com/SlineroDC" target="_blank" rel="noopener noreferrer">
+                <img class="redes-sociales" src="./src/img/logoGithub.png" alt="github" />
+            </a>
+            <a href="https://discord.com/users/696218966301081621" target="_blank" rel="noopener noreferrer">
+                <img class="redes-sociales" src="./src/img/discordLogo.png" alt="discord" />
+            </a>
+        </article>
+        <p class="copy">&copy; 2025 Sebastián Linero</p>
+    </footer>
+
+    <script type="module" src="./src/js/main.js"></script>
+</body>
+
+</html>

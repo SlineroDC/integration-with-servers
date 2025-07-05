@@ -1,0 +1,727 @@
+/* -------------------------
+   General Styles
+   ------------------------- */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff3e0; /* Soft warm light orange background */
+  color: #4e342e; /* Dark brownish text */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ef6c00; /* Warm dark orange header */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(239, 108, 0, 0.6);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Section styling */
+section {
+  background-color: #fff; /* White background for contrast */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  padding: 25px 30px;
+  margin: 25px auto;
+  max-width: 600px;
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 6px 18px rgba(239, 108, 0, 0.25); /* Subtle orange glow on hover */
+}
+
+/* Headings inside sections */
+section h2, section h3 {
+  color: #e65100; /* Dark orange */
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* -------------------------
+   Form Container Styling
+   ------------------------- */
+.form-box {
+  max-width: 380px;
+  background: #ffe0b2; /* Light warm orange background */
+  border-radius: 20px;
+  margin: 0 auto 30px;
+  box-shadow: 0 10px 30px rgba(239, 108, 0, 0.15);
+  padding: 32px 28px 28px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-box:hover {
+  box-shadow: 0 12px 36px rgba(239, 108, 0, 0.3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #e65100;
+  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+/* Input container */
+.form-container {
+  background-color: #fff3e0; /* Very light warm orange */
+  border-radius: 12px;
+  box-shadow: inset 0 3px 6px rgba(230, 81, 0, 0.1);
+  padding: 0 15px;
+}
+
+/* Inputs */
+.input {
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 44px;
+  width: 100%;
+  font-size: 1rem;
+  color: #4e342e;
+  border-radius: 12px;
+  padding-left: 12px;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #ef6c0080; /* translucent orange */
+}
+
+.input:focus {
+  box-shadow: 0 0 6px 2px #ef6c00cc;
+  background-color: #fff;
+}
+
+/* Buttons */
+button {
+  background-color: #ef6c00; /* Warm orange */
+  color: #fff;
+  border: none;
+  border-radius: 28px;
+  padding: 12px 26px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(239, 108, 0, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #bf360c; /* Darker orange */
+  box-shadow: 0 8px 20px rgba(191, 54, 12, 0.6);
+}
+
+/* -------------------------
+   List Styling
+   ------------------------- */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #fff3e0; /* Soft light warm orange background */
+  border: 1px solid #ffcc80;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #e65100;
+}
+
+/* Button inside list */
+ul li button {
+  margin-left: 12px;
+  background-color: #ffb74d;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+ul li button:hover {
+  background-color: #bf360c;
+  color: #fff;
+}
+
+/* -------------------------
+   Contact Section Styling
+   ------------------------- */
+#contact {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(239, 108, 0, 0.15);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+#contact:hover {
+  box-shadow: 0 8px 25px rgba(239, 108, 0, 0.3);
+}
+
+#contact h2 {
+  color: #e65100;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  color: #ffb74dcc;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Contact links list */
+#contact ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#contact ul li {
+  background: #ffe0b2;
+  padding: 14px 18px;
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgba(230, 81, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-weight: 700;
+  color: #e65100;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#contact ul li:hover {
+  background-color: #ef6c00;
+  color: #fff;
+  box-shadow: 0 5px 18px rgba(239, 108, 0, 0.6);
+}
+
+#contact ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Social icons style */
+.redes-sociales {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(76%) saturate(535%) hue-rotate(335deg) brightness(98%) contrast(89%);
+  transition: filter 0.3s ease;
+}
+
+#contact ul li:hover .redes-sociales {
+  filter: brightness(100%) saturate(140%) invert(100%) sepia(55%) saturate(600%) hue-rotate(350deg) brightness(100%) contrast(120%);
+}
+
+/* -------------------------
+   Footer Styling
+   ------------------------- */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #bf360c; /* Dark warm orange footer */
+  color: #ffccbc;
+  font-weight: 600;
+}
+
+footer p.copy {
+  margin: 10px 0 0;
+  font-size: 0.9rem;
+}
+
+/* -------------------------
+   Responsive adjustments
+   ------------------------- */
+@media (max-width: 768px) {
+  #contact ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul li button {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+/* -------------------------
+   General Styles
+   ------------------------- */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff3e0; /* Soft warm light orange background */
+  color: #4e342e; /* Dark brownish text color for good contrast */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ef6c00; /* Warm dark orange header */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(239, 108, 0, 0.6); /* Subtle shadow for depth */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 20px;
+}
+
+/* -------------------------
+   Section Styling
+   ------------------------- */
+section {
+  background-color: #fff; /* White background for content sections */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07); /* Soft shadow */
+  padding: 25px 30px;
+  margin: 25px auto;
+  max-width: 600px; /* Limit max width for readability */
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect adds subtle orange glow */
+section:hover {
+  box-shadow: 0 6px 18px rgba(239, 108, 0, 0.25);
+}
+
+/* Section headings */
+section h2, section h3 {
+  color: #e65100; /* Dark orange accent color */
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* -------------------------
+   Form Container Styling
+   ------------------------- */
+.form-box {
+  max-width: 380px;
+  background: #ffe0b2; /* Light warm orange background */
+  border-radius: 20px;
+  margin: 0 auto 30px;
+  box-shadow: 0 10px 30px rgba(239, 108, 0, 0.15); /* Soft shadow */
+  padding: 32px 28px 28px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Increase shadow on hover for emphasis */
+.form-box:hover {
+  box-shadow: 0 12px 36px rgba(239, 108, 0, 0.3);
+}
+
+/* Form layout uses vertical flexbox with spacing */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form title styling */
+.title {
+  font-size: 1.8rem;
+  color: #e65100;
+  margin-bottom: 10px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+/* Container for inputs with background and inset shadow */
+.form-container {
+  background-color: #fff3e0; /* Very light warm orange */
+  border-radius: 12px;
+  box-shadow: inset 0 3px 6px rgba(230, 81, 0, 0.1);
+  padding: 0 15px;
+}
+
+/* Input field base styling */
+.input {
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 44px;
+  width: 100%;
+  font-size: 1rem;
+  color: #4e342e;
+  border-radius: 12px;
+  padding-left: 12px;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Placeholder text color */
+.input::placeholder {
+  color: #ef6c0080; /* translucent orange */
+}
+
+/* Focus effect with orange glow */
+.input:focus {
+  box-shadow: 0 0 6px 2px #ef6c00cc;
+  background-color: #fff;
+}
+
+/* -------------------------
+   Button Styling
+   ------------------------- */
+button {
+  background-color: #ef6c00; /* Warm orange */
+  color: #fff;
+  border: none;
+  border-radius: 28px;
+  padding: 12px 26px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(239, 108, 0, 0.4); /* Subtle glow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Darker orange and stronger shadow on hover */
+button:hover {
+  background-color: #bf360c;
+  box-shadow: 0 8px 20px rgba(191, 54, 12, 0.6);
+}
+
+/* -------------------------
+   List Styling for Products or Items
+   ------------------------- */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #fff3e0; /* Soft light warm orange background */
+  border: 1px solid #ffcc80;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #e65100;
+}
+
+/* Buttons inside list items */
+ul li button {
+  margin-left: 12px;
+  background-color: #ffb74d;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+ul li button:hover {
+  background-color: #bf360c;
+  color: #fff;
+}
+
+/* -------------------------
+   Contact Section Styling
+   ------------------------- */
+#contact {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(239, 108, 0, 0.15);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover glow on contact section */
+#contact:hover {
+  box-shadow: 0 8px 25px rgba(239, 108, 0, 0.3);
+}
+
+/* Contact heading */
+#contact h2 {
+  color: #e65100;
+  margin-bottom: 20px;
+}
+
+/* Contact description text */
+#contact p {
+  color: #ffb74dcc; /* lighter orange */
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Contact methods list with horizontal layout */
+#contact ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Individual contact method item */
+#contact ul li {
+  background: #ffe0b2; /* light warm orange */
+  padding: 14px 18px;
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgba(230, 81, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-weight: 700;
+  color: #e65100;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Hover effect for contact method items */
+#contact ul li:hover {
+  background-color: #ef6c00;
+  color: #fff;
+  box-shadow: 0 5px 18px rgba(239, 108, 0, 0.6);
+}
+
+/* Link styling inside contact items */
+#contact ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Social icons style (adjusted for orange theme) */
+.redes-sociales {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(76%) saturate(535%) hue-rotate(335deg) brightness(98%) contrast(89%);
+  transition: filter 0.3s ease;
+}
+
+/* Icon color brighten on hover */
+#contact ul li:hover .redes-sociales {
+  filter: brightness(100%) saturate(140%) invert(100%) sepia(55%) saturate(600%) hue-rotate(350deg) brightness(100%) contrast(120%);
+}
+
+/* -------------------------
+   Footer Styling with containment fix
+   ------------------------- */
+footer {
+  text-align: center;
+  padding: 15px 20px;
+  background-color: #bf360c; /* Dark warm orange footer */
+  color: #ffccbc;
+  font-weight: 600;
+
+  max-width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+  overflow: hidden; /* prevent children overflow */
+}
+
+/* Footer copy text */
+footer p.copy {
+  margin: 10px 0 0;
+  font-size: 0.9rem;
+}
+
+/* -------------------------
+   Contact Section Styling
+   ------------------------- */
+#contact {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(239, 108, 0, 0.15);
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+
+  box-sizing: border-box; /* Important for consistent sizing */
+}
+
+/* Hover glow on contact section */
+#contact:hover {
+  box-shadow: 0 8px 25px rgba(239, 108, 0, 0.3);
+}
+
+/* Contact heading */
+#contact h2 {
+  color: #e65100;
+  margin-bottom: 20px;
+}
+
+/* Contact description text */
+#contact p {
+  color: #ffb74dcc; /* lighter orange */
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Contact methods list with flexible wrapping */
+#contact ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* allows items to wrap and not overflow */
+  gap: 20px; /* space between items */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Individual contact method item */
+#contact ul li {
+  background: #ffe0b2; /* light warm orange */
+  padding: 14px 18px;
+  border-radius: 50px;
+  box-shadow: 0 3px 10px rgba(230, 81, 0, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-weight: 700;
+  color: #e65100;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 150px; /* keep some width to avoid too narrow */
+  box-sizing: border-box;
+}
+
+/* Hover effect for contact method items */
+#contact ul li:hover {
+  background-color: #ef6c00;
+  color: #fff;
+  box-shadow: 0 5px 18px rgba(239, 108, 0, 0.6);
+}
+
+/* Link styling inside contact items */
+#contact ul li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Social icons style (adjusted for orange theme) */
+.redes-sociales {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(76%) saturate(535%) hue-rotate(335deg) brightness(98%) contrast(89%);
+  transition: filter 0.3s ease;
+}
+
+/* Icon color brighten on hover */
+#contact ul li:hover .redes-sociales {
+  filter: brightness(100%) saturate(140%) invert(100%) sepia(55%) saturate(600%) hue-rotate(350deg) brightness(100%) contrast(120%);
+}
+
+/* -------------------------
+   Responsive adjustments for smaller screens
+   ------------------------- */
+@media (max-width: 768px) {
+  /* Stack contact list vertically */
+  #contact ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Stack list items vertically and align left */
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: auto; /* allow full width */
+  }
+
+  ul li button {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
