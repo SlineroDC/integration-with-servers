@@ -32,22 +32,6 @@ integration-with-servers/
 ├── package-lock.json           # Lockfile for dependency versions
 └── README.md                   # Project documentation
 ```
-# API Integration and Data Management
-
-This project demonstrates how to build a modern inventory/product management system using JavaScript, REST APIs, and a dynamic user interface. It features real-time product CRUD operations, validation, and responsive design, leveraging tools like **Vite**, **Axios**, **SweetAlert2**, and **json-server** for a full-stack-like experience.
-
----
-
-## 🚀 Features
-
-- Add, edit, and delete products with unique names and positive prices.
-- Prevent duplicate product names and invalid entries.
-- Real-time UI updates with API integration (using `json-server` as a mock backend).
-- Interactive alerts for user feedback (SweetAlert2).
-- Responsive and visually appealing UI with HTML5 and CSS3.
-- Fast development workflow with Vite.
-
----
 
 ## 📋 Product Data Table Example
 
